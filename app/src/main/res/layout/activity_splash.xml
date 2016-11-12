@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2eb82e"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ohmydog.juliahou.ohmydog.Splash">
+
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        app:srcCompat="@drawable/ohmydog"
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "81396816818",
+    "firebase_url": "https://ohmydog-94a0b.firebaseio.com",
+    "project_id": "ohmydog-94a0b",
+    "storage_bucket": "ohmydog-94a0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81396816818:android:dedbdc966e669f4f",
+        "android_client_info": {
+          "package_name": "com.ohmydog.juliahou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81396816818-9resgj0loum2nn28o7cvi1n00bd0n219.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSKkUqWTW6Y4dSpG8_8Kri3uwLC3T62No"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81396816818:android:de352226b7781ec9",
+        "android_client_info": {
+          "package_name": "com.ohmydog.juliahou.ohmydog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81396816818-9resgj0loum2nn28o7cvi1n00bd0n219.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSKkUqWTW6Y4dSpG8_8Kri3uwLC3T62No"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
