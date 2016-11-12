@@ -56,11 +56,13 @@ public class Quiz extends AppCompatActivity {
         tvTokens.setText("" + tokens);
 
         qSet = fetchQuestions(read("questions.txt"));
+        Random rand = new Random();
+        qInd = rand.nextInt(qSet.length());
         populateQuiz(qInd);
     }
 
     public void submit(View v) {
-        if(rbTrue.isSelected() == ans) {
+        if(rbTrue.isChecked() == ans) {
             tokens++;
             tvTokens.setText("" + tokens);
         }

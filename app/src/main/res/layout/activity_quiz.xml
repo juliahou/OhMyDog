@@ -1,44 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#65bef2">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
         android:id="@+id/tvTokens"
+        android:textColor="@android:color/white"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"/>
 
-    <TextView
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvTokens"
+        android:layout_toLeftOf="@id/tvTokens"
+        android:src="@drawable/coin"
+        android:paddingRight="5dp"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvQuestion"
+        card_view:cardCornerRadius="4dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_below="@id/tvTokens"
+        android:layout_marginBottom="20dp">
 
-    <RadioGroup
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQuestion"
+            android:padding="15dp"/>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cvRadio"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rgOptions"
+        card_view:cardCornerRadius="4dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/tvQuestion">
+        android:layout_below="@id/card_view">
 
-        <RadioButton
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="True"
-            android:id="@+id/rbTrue"/>
+            android:id="@+id/rgOptions"
+            android:padding="15dp">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="False"
-            android:id="@+id/rbFalse"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True"
+                android:id="@+id/rbTrue"/>
 
-    </RadioGroup>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False"
+                android:id="@+id/rbFalse"/>
+
+        </RadioGroup>
+
+
+    </android.support.v7.widget.CardView>
 
     <Button
         android:layout_width="wrap_content"
@@ -47,7 +88,7 @@
         android:id="@+id/buttonSubmit"
         android:layout_above="@+id/adView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="10dp"
         android:onClick="submit"/>
 
     <com.google.android.gms.ads.AdView

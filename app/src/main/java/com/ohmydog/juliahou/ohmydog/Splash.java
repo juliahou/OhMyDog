@@ -12,7 +12,7 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        new CountDownTimer(5000, 1000) {
+        new CountDownTimer(1000, 1000) {
             public void onFinish() {
                 Intent i = new Intent(getApplicationContext(), Home.class);
                 startActivity(i);
