@@ -62,7 +62,7 @@
 {"question":"Honeybees don't get sexually transmitted diseases.", "option1":"True", "option2":"False", "answer":"False"},
 {"question":"The annual number of worldwide shark bites worldwide is 10 times less than the number of people bitten by other people in New York.", "option1":"True", "option2":"False", "answer":"True"},
 {"question":"Some cats are allergic to humans.", "option1":"True", "option2":"False", "answer":"True"},
-{"question":"Spiders can't fly.", "option1":"True", "option2":"False", "answer:":"False"},
+{"question":"Spiders can't fly.", "option1":"True", "option2":"False", "answer":"False"},
 {"question":"Hummingbirds can only fly forward.", "option1":"True", "option2":"False", "answer":"False"}
 ]
 }

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">OhMyDog</string>
     <string name="banner_ad_unit_id">ca-app-pub-8320692382610221/7820842994</string>
+    <string name="manifesto">We are a passionate group of individuals who want to combat the plight
+                of abandoned or stray animals in a more effective manner. Answer questions to get
+                coins to spend on food, medicine, and shelter for animals in shelters across
+                the world *happy music*. Thanks to our sponsors, you can help animals in need
+                and learn really, really (really) cool animal facts along the way.</string>
 </resources>

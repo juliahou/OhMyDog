@@ -68,7 +68,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="True"
-                android:id="@+id/rbTrue"/>
+                android:id="@+id/rbTrue"
+                android:checked="true"/>
 
             <RadioButton
                 android:layout_width="wrap_content"

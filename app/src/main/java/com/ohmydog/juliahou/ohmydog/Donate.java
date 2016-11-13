@@ -42,6 +42,7 @@ public class Donate extends AppCompatActivity {
             public void onClick(View v) {
                 if (tokens >= 50) {
                     tokens = tokens - 50;
+                    bank.setText("" + tokens);
                 }
             }
         });
@@ -51,6 +52,7 @@ public class Donate extends AppCompatActivity {
             public void onClick(View v) {
                 if (tokens >= 100) {
                     tokens = tokens - 100;
+                    bank.setText("" + tokens);
                 }
             }
         });
@@ -60,6 +62,7 @@ public class Donate extends AppCompatActivity {
             public void onClick(View v) {
                 if (tokens >= 150) {
                     tokens = tokens - 150;
+                    bank.setText("" + tokens);
                 }
             }
         });
