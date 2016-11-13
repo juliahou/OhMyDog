@@ -3,6 +3,7 @@ package com.ohmydog.juliahou.ohmydog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -24,10 +25,11 @@ public class Home extends AppCompatActivity {
     }
 
     public void donate(View v) {
-
+        Intent i = new Intent(this, Donate.class);
+        startActivity(i);
     }
 
     public void about(View v) {
-
+        //AlertDialog.Builder builder = new D
     }
 }

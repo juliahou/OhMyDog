@@ -37,6 +37,8 @@ public class Quiz extends AppCompatActivity {
 
     private int tokens;
 
+    public static final String MY_PREFS_NAME = "MyPrefsFile";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +67,9 @@ public class Quiz extends AppCompatActivity {
         if(rbTrue.isChecked() == ans) {
             tokens++;
             tvTokens.setText("" + tokens);
+            SharedPreferences.Editor editor = getSharedPreferences("meow", Context.MODE_PRIVATE).edit();
+            editor.putInt("tokens", tokens);
+            editor.apply();
         }
         Random rand = new Random();
         qInd = rand.nextInt(qSet.length());
@@ -128,7 +133,7 @@ public class Quiz extends AppCompatActivity {
         super.onStop();
         SharedPreferences.Editor editor = getPreferences(Context.MODE_PRIVATE).edit();
         editor.putInt("tokens", tokens);
-        editor.commit();
+        editor.apply();
     }
 
     @Override
