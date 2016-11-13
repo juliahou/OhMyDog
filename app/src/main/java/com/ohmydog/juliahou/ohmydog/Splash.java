@@ -16,6 +16,7 @@ public class Splash extends AppCompatActivity {
             public void onFinish() {
                 Intent i = new Intent(getApplicationContext(), Home.class);
                 startActivity(i);
+                finish();
             }
             public void onTick(long millisUntilFinished) { }
         }.start();
